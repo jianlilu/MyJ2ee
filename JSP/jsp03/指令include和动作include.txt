@@ -1,0 +1,15 @@
+
+指令include和动作include的区别  ?
+
+通过之前的学习知道，JSP最后会被转译成Servlet
+
+如果是指令include :
+	<%@include file="footer.jsp" %>
+
+	footer.jsp的内容会被插入到 hello.jsp 转译 成的hello_jsp.java中，最后只会生成一个hello_jsp.java文件
+
+如果是动作include :
+	<jsp:include page="footer.jsp" />
+
+	footer.jsp的内容不会被插入到 hello.jsp 转译 成的hello_jsp.java中，还会有一个footer_jsp.java独立存在。
+ 	hello_jsp.java 会在服务端访问footer_.jsp.java,然后把返回的结果，嵌入到响应中。
