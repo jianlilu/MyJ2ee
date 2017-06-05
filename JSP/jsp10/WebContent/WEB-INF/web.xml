@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+
+	<servlet>
+	    <!-- 把 testconfig.jsp配置为一个 servlet -->
+	    <servlet-name>testconfig</servlet-name>
+	    <jsp-file>/testconfig.jsp</jsp-file>
+	    <!-- 配置初始化参数 -->
+	    <init-param>
+	        <param-name>database-ip</param-name>
+	        <param-value>127.0.0.1</param-value>
+	    </init-param>
+	</servlet>
+	<!-- 将路径 testconfig映射到testconfig.jsp -->
+	<servlet-mapping>
+	    <servlet-name>testconfig</servlet-name>
+	    <url-pattern>/a</url-pattern>
+	</servlet-mapping>
+	
+</web-app>	
