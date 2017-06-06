@@ -9,19 +9,19 @@
  
 <script>
 $(function(){
-    $("a").addClass("btn btn-default btn-xs");
+    $("a").addClass("btn btn-primary btn-sm");
      
 });
  
 </script> 
 <table style="width:500px; margin:44px auto" class="table table-striped table-bordered table-hover  table-condensed" align='center' border='1' cellspacing='0'>
     <tr>
-        <td>id</td>
-        <td>name</td>
-        <td>hp</td>
-        <td>damage</td>
-        <td>edit</td>
-        <td>delete</td>
+        <th>id</th>
+        <th>name</th>
+        <th>hp</th>
+        <th>damage</th>
+        <th>edit</th>
+        <th>delete</th>
     </tr>
     <c:forEach items="${heros}" var="hero" varStatus="st">
         <tr>
@@ -38,9 +38,9 @@ $(function(){
         <nav>
           <ul class="pager">
  
-            <li><a href="?start=0">首  页</a></li>
-            <li><a href="?start=${pre}">上一页</a></li>
-            <li><a href="?start=${next}">下一页</a></li>
-            <li><a href="?start=${last}">末  页</a></li>
+            <a href="?start=0">首  页</a>
+            <a href="?start=${pre}">上一页</a>
+            <a href="?start=${next}">下一页</a>
+            <a href="?start=${last}">末  页</a>
           </ul>            
         </nav>
