@@ -29,7 +29,7 @@ $(function(){
             <td>${hero.name}</td>
             <td>${hero.hp}</td>
             <td>${hero.damage}</td>
-            <td><a href="editHero?id=${hero.id}">编辑</a></td>
+            <td><a href="eidtHero?id=${hero.id}">编辑</a></td>
             <td><a href="deleteHero?id=${hero.id}">删除</a></td>
         </tr>
     </c:forEach>

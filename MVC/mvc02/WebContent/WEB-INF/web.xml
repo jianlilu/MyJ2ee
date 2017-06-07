@@ -11,4 +11,36 @@
     <url-pattern>/listHero</url-pattern>
   </servlet-mapping>
   
+
+  <servlet>
+    <servlet-name>HeroDeleteServlet</servlet-name>
+    <servlet-class>com.lu.c.HeroDeleteServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>HeroDeleteServlet</servlet-name>
+    <url-pattern>/deleteHero</url-pattern>
+  </servlet-mapping>
+  
+
+  <servlet>
+    <servlet-name>HeroEditServlet</servlet-name>
+    <servlet-class>com.lu.c.HeroEditServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>HeroEditServlet</servlet-name>
+    <url-pattern>/eidtHero</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+        <servlet-name>HeroUpdateServlet</servlet-name>
+        <servlet-class>com.lu.c.HeroUpdateServlet</servlet-class>
+    </servlet>
+ 
+    <servlet-mapping>
+        <servlet-name>HeroUpdateServlet</servlet-name>
+        <url-pattern>/updateHero</url-pattern>
+    </servlet-mapping>
+  
 </web-app>
