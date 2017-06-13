@@ -3,12 +3,7 @@
  
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
  
-<c:if test="${!empty user}">
-  <div align="center">
-    	<h1> ${user.name}'s 购物车</h1>
-  </div>
-</c:if>
-
+<h1 align="center" >我的购物车</h1>
 <table align='center' border='1' cellspacing='0'>
     <tr>
         <td>商品名称</td>
@@ -25,4 +20,13 @@
             <td>${oi.product.price*oi.num}</td>
         </tr>
     </c:forEach>
+     
+    <c:if test="${!empty ois}">
+        <tr>
+            <td colspan="4" align="right">
+                <a href="createOrder">生成订单</a>
+            </td>
+        </tr>
+    </c:if>
+     
 </table>
